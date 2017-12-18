@@ -31,4 +31,5 @@ let ToDo = mongoose.model('Todo', todoSchema);
 
 function addToDo(req,res){
       console.log(req.body);
+      res.status(200).json({ message:"recieved"});
 }
